@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chatbot-dentist-advisor/static/css/main.f537845a.chunk.css",
+    "main.js": "/chatbot-dentist-advisor/static/js/main.2ddd2ae6.chunk.js",
+    "main.js.map": "/chatbot-dentist-advisor/static/js/main.2ddd2ae6.chunk.js.map",
+    "runtime-main.js": "/chatbot-dentist-advisor/static/js/runtime-main.7432311a.js",
+    "runtime-main.js.map": "/chatbot-dentist-advisor/static/js/runtime-main.7432311a.js.map",
+    "static/js/2.8248d594.chunk.js": "/chatbot-dentist-advisor/static/js/2.8248d594.chunk.js",
+    "static/js/2.8248d594.chunk.js.map": "/chatbot-dentist-advisor/static/js/2.8248d594.chunk.js.map",
+    "static/js/3.7c6ce3a9.chunk.js": "/chatbot-dentist-advisor/static/js/3.7c6ce3a9.chunk.js",
+    "static/js/3.7c6ce3a9.chunk.js.map": "/chatbot-dentist-advisor/static/js/3.7c6ce3a9.chunk.js.map",
+    "index.html": "/chatbot-dentist-advisor/index.html",
+    "static/css/main.f537845a.chunk.css.map": "/chatbot-dentist-advisor/static/css/main.f537845a.chunk.css.map",
+    "static/js/2.8248d594.chunk.js.LICENSE.txt": "/chatbot-dentist-advisor/static/js/2.8248d594.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7432311a.js",
+    "static/js/2.8248d594.chunk.js",
+    "static/css/main.f537845a.chunk.css",
+    "static/js/main.2ddd2ae6.chunk.js"
+  ]
+}

@@ -27,7 +27,11 @@ const config = {
         },
         {
             widgetName: "quizOptions",
-            widgetFunc: (props) => <QuizOptions {...props} />,
+            widgetFunc: (props) => <QuizOptions {...props} options={[1, 2]} />,
+        },
+        {
+            widgetName: "quizOptionsWithoutPassword",
+            widgetFunc: (props) => <QuizOptions {...props} options={[2]} />,
         },
         {
             widgetName: "javascriptLinks",

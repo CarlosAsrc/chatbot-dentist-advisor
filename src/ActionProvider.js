@@ -10,6 +10,11 @@ class ActionProvider {
         this.updateChatbotState(greetingMessage);
     }
 
+    passwordMatch() {
+        this.sendBotMessage("Perfeito! Estes são os links de acesso para o material complementar: (LINKS)", {})
+    }
+
+
     handleObjectives = () => {
         this.sendBotMessage("Os Principais objetivos do preparo radicular são:", {})
         this.sendBotMessage("- Manter saúde periapical", {})
@@ -32,7 +37,7 @@ class ActionProvider {
     };
 
     handleQuizRequest = () => {
-        this.sendBotMessage("Ótimo! No seguinte link você deverá realizar o quiz para obter a senha de acesso aos materiais complementares sobre o preparo do canal radicular!",
+        this.sendBotMessage("Ótimo! No seguinte link você deverá realizar o quiz para obter a senha de acesso aos materiais complementares sobre o preparo do canal radicular: (LINK)",
             { widget: "quizOptions" }
         )
     };
@@ -44,6 +49,15 @@ class ActionProvider {
             { widget: "learningOptions" }
         )
     };
+
+    handleHasPassword = () => {
+        this.sendBotMessage(
+            "Informe a senha para obter os links de acesso:",
+            { widget: "quizOptionsWithoutPassword" }
+        )
+    };
+
+
 
 
     sendBotMessage = (text, widget) => {

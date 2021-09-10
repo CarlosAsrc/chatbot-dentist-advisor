@@ -5,10 +5,12 @@ import React from "react";
 import "./QuizOptions.css";
 
 const QuizOptions = (props) => {
-    const options = [
+    let options = [
         { text: "Ja fiz o quiz e estou com a senha", handler: props.actionProvider.handleHasPassword, id: 1 },
         { text: "Quero ver os materiais disponíveis", handler: props.actionProvider.handleBackToOptions, id: 2 }
     ];
+
+    options = options.filter(option => props.options.includes(option.id))
 
     const optionsMarkup = options.map((option) => (
         <button

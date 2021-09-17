@@ -11,3 +11,7 @@
   border: 1px solid #ff0095;
   margin: 3px;
 }
+
+.learning-option-button:hover {
+  cursor: pointer;
+}

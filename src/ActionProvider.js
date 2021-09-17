@@ -1,4 +1,11 @@
+import song from "./media/pling-sound.mp3";
+
 class ActionProvider {
+
+    state = {
+        audio: new Audio(song)
+    };
+    
     constructor(createChatBotMessage, setStateFunc) {
         this.createChatBotMessage = createChatBotMessage;
         this.setState = setStateFunc;
@@ -12,8 +19,8 @@ class ActionProvider {
     cannotUnderstandMessage() {
         this.sendBotMessage("Não entendi 😕", {})
         this.handleBackToOptions()
-    } 
-    
+    }
+
     yourNameQuestion() {
         this.sendBotMessage("O meu nome é Estrela! 🥰", {})
         this.handleBackToOptions()
@@ -21,7 +28,7 @@ class ActionProvider {
 
     passwordMatch() {
         this.sendBotMessage("Perfeito! Estes são os links de acesso para o material complementar:",
-        { widget: 'complementaryMaterialLinks' })
+            { widget: 'complementaryMaterialLinks' })
     }
 
 
@@ -72,6 +79,7 @@ class ActionProvider {
 
     sendBotMessage = (text, widget) => {
         this.updateChatbotState(this.createChatBotMessage(text, widget));
+        setTimeout(() => this.state.audio.play(), 1000)
     }
 
     updateChatbotState(message) {

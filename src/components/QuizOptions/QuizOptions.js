@@ -7,7 +7,7 @@ import "./QuizOptions.css";
 const QuizOptions = (props) => {
     let options = [
         { text: "Ja fiz o quiz e estou com a senha", handler: props.actionProvider.handleHasPassword, id: 1 },
-        { text: "Quero ver os materiais disponíveis", handler: props.actionProvider.handleBackToOptions, id: 2 }
+        { text: "Voltar para as opções disponíveis", handler: props.actionProvider.handleBackToOptions, id: 2 }
     ];
 
     options = options.filter(option => props.options.includes(option.id))

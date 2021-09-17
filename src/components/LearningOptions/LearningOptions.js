@@ -1,5 +1,3 @@
-// in src/components/LearningOptions/LearningOptions.jsx
-
 import React from "react";
 
 import "./LearningOptions.css";

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chatbot-dentist-advisor/static/css/main.fa78e6ca.chunk.css",
-    "main.js": "/chatbot-dentist-advisor/static/js/main.1f698828.chunk.js",
-    "main.js.map": "/chatbot-dentist-advisor/static/js/main.1f698828.chunk.js.map",
+    "main.js": "/chatbot-dentist-advisor/static/js/main.85e7bcd4.chunk.js",
+    "main.js.map": "/chatbot-dentist-advisor/static/js/main.85e7bcd4.chunk.js.map",
     "runtime-main.js": "/chatbot-dentist-advisor/static/js/runtime-main.48bf2f6e.js",
     "runtime-main.js.map": "/chatbot-dentist-advisor/static/js/runtime-main.48bf2f6e.js.map",
     "static/js/2.e743f1d1.chunk.js": "/chatbot-dentist-advisor/static/js/2.e743f1d1.chunk.js",
@@ -13,12 +13,13 @@
     "static/css/main.fa78e6ca.chunk.css.map": "/chatbot-dentist-advisor/static/css/main.fa78e6ca.chunk.css.map",
     "static/js/2.e743f1d1.chunk.js.LICENSE.txt": "/chatbot-dentist-advisor/static/js/2.e743f1d1.chunk.js.LICENSE.txt",
     "static/media/bot-avatar.f6e79fa2.svg": "/chatbot-dentist-advisor/static/media/bot-avatar.f6e79fa2.svg",
+    "static/media/pling-sound.af210ab9.mp3": "/chatbot-dentist-advisor/static/media/pling-sound.af210ab9.mp3",
     "static/media/user-avatar.015e7960.svg": "/chatbot-dentist-advisor/static/media/user-avatar.015e7960.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.48bf2f6e.js",
     "static/js/2.e743f1d1.chunk.js",
     "static/css/main.fa78e6ca.chunk.css",
-    "static/js/main.1f698828.chunk.js"
+    "static/js/main.85e7bcd4.chunk.js"
   ]
 }

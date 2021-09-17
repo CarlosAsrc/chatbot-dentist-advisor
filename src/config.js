@@ -1,23 +1,29 @@
-// Config starter code
 import { createChatBotMessage } from "react-chatbot-kit";
 
 import LearningOptions from "./components/LearningOptions/LearningOptions";
 import QuizOptions from "./components/QuizOptions/QuizOptions";
 import LinkList from "./components/LinkList/LinkList.js";
+import DentistBotAvatar from "./components/DentistBotAvatar";
+import UserAvatar from "./components/UserAvatar";
 
 const config = {
-    botName: "Cirurgião Dentista Bot",
-    initialMessages: [createChatBotMessage(`Olá! Sou um bot especializado em preparo do canal radicular. O que você deseja saber?`, {
+    botName: "Assistente virtual Estrela",
+    initialMessages: [createChatBotMessage(`Olá! Aqui é a Estrela, assistente virtual inteligente, especializada em preparo do canal radicular. O que você deseja?`, {
         widget: "learningOptions",
     }),
     ],
     customStyles: {
         botMessageBox: {
-            backgroundColor: "#376B7E",
+            backgroundColor: "#ff0095",
         },
         chatButton: {
-            backgroundColor: "#376B7E",
+            backgroundColor: "#ff0095",
         },
+    },
+
+    customComponents: {
+        botAvatar: (props) => <DentistBotAvatar {...props} />,
+        userAvatar: (props) => <UserAvatar {...props} />,
     },
 
     widgets: [
@@ -27,32 +33,45 @@ const config = {
         },
         {
             widgetName: "quizOptions",
-            widgetFunc: (props) => <QuizOptions {...props} options={[1, 2]} />,
+            widgetFunc: (props) => <div>
+                <LinkList {...props} />
+                <QuizOptions {...props} options={[1, 2]} />
+            </div>,
+            props: {
+                options: [
+                    {
+                        text: "Abrir o quiz",
+                        url:
+                            "https://www.google.com.br",
+                        id: 1,
+                    },
+                ],
+            },
         },
         {
             widgetName: "quizOptionsWithoutPassword",
             widgetFunc: (props) => <QuizOptions {...props} options={[2]} />,
         },
         {
-            widgetName: "javascriptLinks",
+            widgetName: "complementaryMaterialLinks",
             widgetFunc: (props) => <LinkList {...props} />,
             props: {
                 options: [
                     {
-                        text: "Introduction to JS",
+                        text: "Material 1",
                         url:
-                            "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/",
+                            "https://www.google.com.br",
                         id: 1,
                     },
                     {
-                        text: "Mozilla JS Guide",
+                        text: "Material 2",
                         url:
-                            "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                            "https://www.google.com.br",
                         id: 2,
                     },
                     {
-                        text: "Frontend Masters",
-                        url: "https://frontendmasters.com",
+                        text: "Material 3",
+                        url: "https://www.google.com.br",
                         id: 3,
                     },
                 ],

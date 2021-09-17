@@ -1,4 +1,3 @@
-
 class ActionProvider {
     constructor(createChatBotMessage, setStateFunc) {
         this.createChatBotMessage = createChatBotMessage;
@@ -6,12 +5,23 @@ class ActionProvider {
     }
 
     greet() {
-        const greetingMessage = this.createChatBotMessage("Hi, friend.");
-        this.updateChatbotState(greetingMessage);
+        this.sendBotMessage("Olá! 😃", {})
+        this.handleBackToOptions()
+    }
+
+    cannotUnderstandMessage() {
+        this.sendBotMessage("Não entendi 😕", {})
+        this.handleBackToOptions()
+    } 
+    
+    yourNameQuestion() {
+        this.sendBotMessage("O meu nome é Estrela! 🥰", {})
+        this.handleBackToOptions()
     }
 
     passwordMatch() {
-        this.sendBotMessage("Perfeito! Estes são os links de acesso para o material complementar: (LINKS)", {})
+        this.sendBotMessage("Perfeito! Estes são os links de acesso para o material complementar:",
+        { widget: 'complementaryMaterialLinks' })
     }
 
 
@@ -37,7 +47,7 @@ class ActionProvider {
     };
 
     handleQuizRequest = () => {
-        this.sendBotMessage("Ótimo! No seguinte link você deverá realizar o quiz para obter a senha de acesso aos materiais complementares sobre o preparo do canal radicular: (LINK)",
+        this.sendBotMessage("Ótimo! No seguinte link você deverá realizar o quiz para obter a senha de acesso aos materiais complementares sobre o preparo do canal radicular:",
             { widget: "quizOptions" }
         )
     };
@@ -46,7 +56,7 @@ class ActionProvider {
     handleBackToOptions = () => {
         this.sendBotMessage(
             "Escolha uma das opções para que eu possa lhe ajudar:",
-            { widget: "learningOptions" }
+            { widget: "learningOptions", delay: 2000 }
         )
     };
 

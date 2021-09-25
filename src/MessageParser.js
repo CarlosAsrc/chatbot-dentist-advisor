@@ -21,8 +21,39 @@ class MessageParser {
       return
     }
 
-    if (lowerCaseMessage.includes("senha")) {
-      this.actionProvider.passwordMatch()
+    if (lowerCaseMessage.includes("mapa mental")) {
+      this.actionProvider.handleMentalMap()
+      return
+    }
+
+    if (lowerCaseMessage.includes("quiz")) {
+      this.actionProvider.handleQuizRequest()
+      return
+    }
+
+    if (
+      lowerCaseMessage.includes("principios") ||
+      lowerCaseMessage.includes("princípios")
+    ) {
+      this.actionProvider.handlePrinciples()
+      return
+    }
+
+    if (
+      lowerCaseMessage.includes("videoaula") ||
+      lowerCaseMessage.includes("video aula")
+    ) {
+      this.actionProvider.handleVideoLessonsTips()
+      return
+    }
+
+    if (lowerCaseMessage.includes("livro")) {
+      this.actionProvider.handleBooksTips()
+      return
+    }
+
+    if (lowerCaseMessage.includes("artigo")) {
+      this.actionProvider.handleArticlesTips()
       return
     }
 

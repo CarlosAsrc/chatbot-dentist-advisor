@@ -1,0 +1,17 @@
+.bibliographic-tips-options-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.bibliographic-tips-option-button {
+  padding: 0.5rem;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid #ff0095;
+  margin: 3px;
+}
+
+.bibliographic-tips-option-button:hover {
+  cursor: pointer;
+}

@@ -4,9 +4,11 @@ import "./LearningOptions.css";
 
 const LearningOptions = (props) => {
     const options = [
-        { text: "Conhecer os objetivos do preparo do canal radicular", handler: props.actionProvider.handleObjectives, id: 1 },
-        { text: "Saber o passo a passo do preparo radicular", handler: props.actionProvider.handleStepByStep, id: 2 },
-        { text: "Quero fazer o quiz", handler: props.actionProvider.handleQuizRequest, id: 3 }
+        { text: "Quais princípios são esses?", handler: props.actionProvider.handlePrinciples, id: 1 },
+        { text: "Testar meus conhecimentos", handler: props.actionProvider.handleQuizRequest, id: 2 },
+        { text: "Mapa mental", handler: props.actionProvider.handleMentalMap, id: 3 },
+        { text: "Dicas bibliográficas", handler: props.actionProvider.handleBibliographicTips, id: 4 }
+
     ];
 
     const optionsMarkup = options.map((option) => (

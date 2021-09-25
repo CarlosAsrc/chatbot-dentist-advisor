@@ -32,8 +32,8 @@ class MessageParser {
     }
 
     if (
-      lowerCaseMessage.includes("principios") ||
-      lowerCaseMessage.includes("princípios")
+      lowerCaseMessage.includes("principio") ||
+      lowerCaseMessage.includes("princípio")
     ) {
       this.actionProvider.handlePrinciples()
       return

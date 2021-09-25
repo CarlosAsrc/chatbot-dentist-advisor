@@ -5,7 +5,7 @@ class ActionProvider {
     state = {
         audio: new Audio(song)
     };
-    
+
     constructor(createChatBotMessage, setStateFunc) {
         this.createChatBotMessage = createChatBotMessage;
         this.setState = setStateFunc;
@@ -32,47 +32,58 @@ class ActionProvider {
     }
 
 
-    handleObjectives = () => {
-        this.sendBotMessage("Os Principais objetivos do preparo radicular são:", {})
-        this.sendBotMessage("- Manter saúde periapical", {})
-        this.sendBotMessage("- Condições de reparação da região periapical e canal radicular", {})
+    handlePrinciples = () => {
+        this.sendBotMessage("Esses princípios são ....", {})
+        this.sendBotMessage("Que saber mais? Confira esses resumos que preparamos para você!", { widget: 'summariesPDF' })
 
         this.handleBackToOptions()
     };
 
 
-    handleStepByStep = () => {
-        this.sendBotMessage("O preparo é feito na direção cérvico-apical, através dos seguintes passos: ", {})
-
-        this.sendBotMessage("Exploração do canal radicular", {})
-        this.sendBotMessage("Preparo do ⅓ cervical", {})
-        this.sendBotMessage("Odontometria", {})
-        this.sendBotMessage("Preparo do ⅓ apical", {})
+    handleMentalMap = () => {
+        this.sendBotMessage("Preparamos um brinde para você, que tal um mapa mental para te ajudar? Assim fica moleza né?!", { widget: 'mentalMap' })
 
         this.handleBackToOptions()
-
     };
 
     handleQuizRequest = () => {
-        this.sendBotMessage("Ótimo! No seguinte link você deverá realizar o quiz para obter a senha de acesso aos materiais complementares sobre o preparo do canal radicular:",
+        this.sendBotMessage("Agora, que tal testar os seus conhecimentos sobre os princípios do preparo radicular?",
             { widget: "quizOptions" }
         )
+        this.handleBackToOptions()
     };
+
+    handleBibliographicTips = () => {
+        this.sendBotMessage("Confira as dicas de sites que irão de ajudar:", { widget: 'bibliographicTipsOptions' })
+    };
+
+    handleVideoLessonsTips = () => {
+        this.sendBotMessage("Então saca só esse canal que traz uma abordagem completa sobre o assunto:", { widget: 'videoLessonsLinks' })
+    }
+
+    handleBooksTips = () => {
+        this.sendBotMessage("Segue algumas dicas de livros referências sobre o assunto:", { widget: 'booksLinks' })
+    }
+
+    handleArticlesTips = () => {
+        this.sendBotMessage("Segue algumas dicas de artigos para se manter atualizado:", { widget: 'articlesLinks' })
+    }
+
+    handleThanks = () => {
+        this.sendBotMessage("Espero que tenha te ajudado, obrigada!", {})
+    }
+
+    
+
 
 
     handleBackToOptions = () => {
         this.sendBotMessage(
-            "Escolha uma das opções para que eu possa lhe ajudar:",
+            "Escolha uma das opções para que eu possa continuar lhe ajudando:",
             { widget: "learningOptions", delay: 2000 }
         )
     };
 
-    handleHasPassword = () => {
-        this.sendBotMessage(
-            "Informe a senha para obter os links de acesso:",
-            { widget: "quizOptionsWithoutPassword" }
-        )
-    };
 
 
 

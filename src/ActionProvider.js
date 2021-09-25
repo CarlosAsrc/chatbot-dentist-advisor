@@ -26,11 +26,6 @@ class ActionProvider {
         this.handleBackToOptions()
     }
 
-    passwordMatch() {
-        this.sendBotMessage("Perfeito! Estes são os links de acesso para o material complementar:",
-            { widget: 'complementaryMaterialLinks' })
-    }
-
 
     handlePrinciples = () => {
         this.sendBotMessage("Esses princípios são ....", {})

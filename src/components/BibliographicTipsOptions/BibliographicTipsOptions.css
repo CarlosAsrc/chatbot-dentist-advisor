@@ -10,8 +10,11 @@
   background: transparent;
   border: 1px solid #ff0095;
   margin: 3px;
+  transition: all ease 0.5s;
 }
 
 .bibliographic-tips-option-button:hover {
   cursor: pointer;
+  background-color: #ff0095;
+  color: white;
 }

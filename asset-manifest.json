@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/chatbot-dentist-advisor/static/css/main.02aa07c0.chunk.css",
-    "main.js": "/chatbot-dentist-advisor/static/js/main.92934a29.chunk.js",
-    "main.js.map": "/chatbot-dentist-advisor/static/js/main.92934a29.chunk.js.map",
+    "main.css": "/chatbot-dentist-advisor/static/css/main.e3fa4009.chunk.css",
+    "main.js": "/chatbot-dentist-advisor/static/js/main.bcc49cb5.chunk.js",
+    "main.js.map": "/chatbot-dentist-advisor/static/js/main.bcc49cb5.chunk.js.map",
     "runtime-main.js": "/chatbot-dentist-advisor/static/js/runtime-main.2d5c97b5.js",
     "runtime-main.js.map": "/chatbot-dentist-advisor/static/js/runtime-main.2d5c97b5.js.map",
     "static/js/2.e743f1d1.chunk.js": "/chatbot-dentist-advisor/static/js/2.e743f1d1.chunk.js",
@@ -10,16 +10,17 @@
     "static/js/3.89e7cb7d.chunk.js": "/chatbot-dentist-advisor/static/js/3.89e7cb7d.chunk.js",
     "static/js/3.89e7cb7d.chunk.js.map": "/chatbot-dentist-advisor/static/js/3.89e7cb7d.chunk.js.map",
     "index.html": "/chatbot-dentist-advisor/index.html",
-    "static/css/main.02aa07c0.chunk.css.map": "/chatbot-dentist-advisor/static/css/main.02aa07c0.chunk.css.map",
+    "static/css/main.e3fa4009.chunk.css.map": "/chatbot-dentist-advisor/static/css/main.e3fa4009.chunk.css.map",
     "static/js/2.e743f1d1.chunk.js.LICENSE.txt": "/chatbot-dentist-advisor/static/js/2.e743f1d1.chunk.js.LICENSE.txt",
     "static/media/bot-avatar.f6e79fa2.svg": "/chatbot-dentist-advisor/static/media/bot-avatar.f6e79fa2.svg",
+    "static/media/link.c3257aab.svg": "/chatbot-dentist-advisor/static/media/link.c3257aab.svg",
     "static/media/pling-sound.af210ab9.mp3": "/chatbot-dentist-advisor/static/media/pling-sound.af210ab9.mp3",
     "static/media/user-avatar.015e7960.svg": "/chatbot-dentist-advisor/static/media/user-avatar.015e7960.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2d5c97b5.js",
     "static/js/2.e743f1d1.chunk.js",
-    "static/css/main.02aa07c0.chunk.css",
-    "static/js/main.92934a29.chunk.js"
+    "static/css/main.e3fa4009.chunk.css",
+    "static/js/main.bcc49cb5.chunk.js"
   ]
 }

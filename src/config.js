@@ -6,7 +6,8 @@ import ImageViewer from "./components/ImageViewer/ImageViewer";
 import DentistBotAvatar from "./components/DentistBotAvatar";
 import UserAvatar from "./components/UserAvatar";
 import BibliographicTipsOptions from "./components/BibliographicTipsOptions/BibliographicTipsOptions";
-import BibliographicTipsFinalizationOptions  from "./components/BibliographicTipsFinalizationOptions/BibliographicTipsFinalizationOptions";
+import BibliographicTipsFinalizationOptions from "./components/BibliographicTipsFinalizationOptions/BibliographicTipsFinalizationOptions";
+import BackToOptionsButton from "./components/BackToOptionsButton/BackToOptionsButton";
 
 const config = {
     botName: "Assistente virtual Estrela",
@@ -37,6 +38,7 @@ const config = {
             widgetName: "summariesPDF",
             widgetFunc: (props) => <div>
                 <LinkList {...props} />
+                <BackToOptionsButton {...props} />
             </div>,
             props: {
                 options: [
@@ -57,12 +59,16 @@ const config = {
         },
         {
             widgetName: "mentalMap",
-            widgetFunc: (props) => <ImageViewer />,
+            widgetFunc: (props) => <div>
+                <ImageViewer />
+                <BackToOptionsButton {...props} />
+            </div>,
         },
         {
             widgetName: "quizOptions",
             widgetFunc: (props) => <div>
                 <LinkList {...props} />
+                <BackToOptionsButton {...props} />
             </div>,
             props: {
                 options: [
@@ -77,14 +83,18 @@ const config = {
         },
         {
             widgetName: "bibliographicTipsOptions",
-            widgetFunc: (props) => <BibliographicTipsOptions {...props} />,
+            widgetFunc: (props) => <div>
+                <BibliographicTipsOptions {...props} />
+                <BackToOptionsButton {...props} />
+            </div>,
         },
 
         {
             widgetName: "videoLessonsLinks",
             widgetFunc: (props) => <div>
                 <LinkList {...props} />
-                <BibliographicTipsFinalizationOptions {...props}  />
+                <BibliographicTipsFinalizationOptions {...props} />
+                <BackToOptionsButton {...props} />
             </div>,
             props: {
                 options: [
@@ -102,7 +112,8 @@ const config = {
             widgetName: "booksLinks",
             widgetFunc: (props) => <div>
                 <LinkList {...props} />
-                <BibliographicTipsFinalizationOptions {...props}  />
+                <BibliographicTipsFinalizationOptions {...props} />
+                <BackToOptionsButton {...props} />
             </div>,
             props: {
                 options: [
@@ -120,7 +131,8 @@ const config = {
             widgetName: "articlesLinks",
             widgetFunc: (props) => <div>
                 <LinkList {...props} />
-                <BibliographicTipsFinalizationOptions {...props}  />
+                <BibliographicTipsFinalizationOptions {...props} />
+                <BackToOptionsButton {...props} />
             </div>,
             props: {
                 options: [
@@ -134,31 +146,9 @@ const config = {
             },
         },
 
-
         {
-            widgetName: "complementaryMaterialLinks",
-            widgetFunc: (props) => <LinkList {...props} />,
-            props: {
-                options: [
-                    {
-                        text: "Material 1",
-                        url:
-                            "https://www.google.com.br",
-                        id: 1,
-                    },
-                    {
-                        text: "Material 2",
-                        url:
-                            "https://www.google.com.br",
-                        id: 2,
-                    },
-                    {
-                        text: "Material 3",
-                        url: "https://www.google.com.br",
-                        id: 3,
-                    },
-                ],
-            },
+            widgetName: "backToOptionsButton",
+            widgetFunc: (props) => <BackToOptionsButton {...props} />,
         },
     ],
 }

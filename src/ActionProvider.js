@@ -13,39 +13,34 @@ class ActionProvider {
 
     greet() {
         this.sendBotMessage("Olá! 😃", {})
-        this.handleBackToOptions()
+        this.handleBackToOptions(2000)
     }
 
     cannotUnderstandMessage() {
         this.sendBotMessage("Não entendi 😕", {})
-        this.handleBackToOptions()
+        this.handleBackToOptions(2000)
     }
 
     yourNameQuestion() {
         this.sendBotMessage("O meu nome é Estrela! 🥰", {})
-        this.handleBackToOptions()
+        this.handleBackToOptions(2000)
     }
 
 
     handlePrinciples = () => {
         this.sendBotMessage("Esses princípios são ....", {})
         this.sendBotMessage("Que saber mais? Confira esses resumos que preparamos para você!", { widget: 'summariesPDF' })
-
-        this.handleBackToOptions()
     };
 
 
     handleMentalMap = () => {
         this.sendBotMessage("Preparamos um brinde para você, que tal um mapa mental para te ajudar? Assim fica moleza né?!", { widget: 'mentalMap' })
-
-        this.handleBackToOptions()
     };
 
     handleQuizRequest = () => {
         this.sendBotMessage("Agora, que tal testar os seus conhecimentos sobre os princípios do preparo radicular?",
             { widget: "quizOptions" }
         )
-        this.handleBackToOptions()
     };
 
     handleBibliographicTips = () => {
@@ -72,10 +67,10 @@ class ActionProvider {
 
 
 
-    handleBackToOptions = () => {
+    handleBackToOptions = (delay) => {
         this.sendBotMessage(
             "Escolha uma das opções para que eu possa continuar lhe ajudando:",
-            { widget: "learningOptions", delay: 2000 }
+            { widget: "learningOptions" }
         )
     };
 

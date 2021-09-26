@@ -1,0 +1,20 @@
+.back-to-options-button-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.back-to-options-button {
+  padding: 0.5rem;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid #ff0095;
+  margin: 3px;
+  transition: all ease 0.5s;
+}
+
+.back-to-options-button:hover {
+  cursor: pointer;
+  background-color: #ff0095;
+  color: white;
+}

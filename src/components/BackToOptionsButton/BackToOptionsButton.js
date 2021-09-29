@@ -4,7 +4,7 @@ import "./BackToOptionsButton.css";
 
 const BackToOptionsButton = (props) => {
     const options = [
-        { text: "Quero ver as opções iniciais.", handler: props.actionProvider.handleBackToOptions, id: 1 }
+        { text: "Quero ver demais opções.", handler: props.actionProvider.handleBackToOptions, id: 1 }
     ];
 
     const optionsMarkup = options.map((option) => (

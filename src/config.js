@@ -8,11 +8,12 @@ import UserAvatar from "./components/UserAvatar";
 import BibliographicTipsOptions from "./components/BibliographicTipsOptions/BibliographicTipsOptions";
 import BibliographicTipsFinalizationOptions from "./components/BibliographicTipsFinalizationOptions/BibliographicTipsFinalizationOptions";
 import BackToOptionsButton from "./components/BackToOptionsButton/BackToOptionsButton";
+import QuizQuestionOptions from "./components/QuizQuestionOptions/QuizQuestionOptions";
 
 const config = {
     botName: "Assistente virtual Estrela",
-    initialMessages: [createChatBotMessage(`Olá, aqui é a Estrela, assistente virtual inteligente, especialista em princípios do preparo radicular. O que você deseja?`, {
-        widget: "learningOptions",
+    initialMessages: [createChatBotMessage(`Olá, aqui é a Estrela, assistente virtual especialista em Princípios do Preparo Radicular, que serve para que o profissional possa  planejar cuidadosamente o caso e ser executado de forma correta, evitando que seja surpreendido durante a execução do preparo do canal. Deseja fazer o Quiz?`, {
+        widget: "quizQuestionOptions",
     }),
     ],
     customStyles: {
@@ -35,6 +36,10 @@ const config = {
             widgetFunc: (props) => <LearningOptions {...props} />,
         },
         {
+            widgetName: "quizQuestionOptions",
+            widgetFunc: (props) => <QuizQuestionOptions {...props} />,
+        },
+        {
             widgetName: "summariesPDF",
             widgetFunc: (props) => <div>
                 <LinkList {...props} />
@@ -45,13 +50,13 @@ const config = {
                     {
                         text: "Baixar resumo sobre os objetivos (limpeza e modelagem) + princípios de Schilder.",
                         url:
-                            "https://www.google.com.br",
+                            "https://chatbot-dentist-advisor-resources.s3.amazonaws.com/Grupo+6+Princ%C3%ADpios+do+Preparo+Radicular.pdf",
                         id: 1,
                     },
                     {
-                        text: "Baixar resumo Medidas+instrumentais e produtos irrigadores.",
+                        text: "Baixar resumo sobre Medidas + instrumentais e produtos irrigadores.",
                         url:
-                            "https://www.google.com.br",
+                            "https://chatbot-dentist-advisor-resources.s3.amazonaws.com/RESUMO+Princ%C3%ADpios+do+Preparo+Radicular.pdf",
                         id: 2,
                     },
                 ],
@@ -60,9 +65,19 @@ const config = {
         {
             widgetName: "mentalMap",
             widgetFunc: (props) => <div>
-                <ImageViewer />
+                <LinkList {...props} />
                 <BackToOptionsButton {...props} />
             </div>,
+            props: {
+                options: [
+                    {
+                        text: "Baixar Mapa Mental",
+                        url:
+                            "https://chatbot-dentist-advisor-resources.s3.amazonaws.com/Mapa+Mental+-+Grupo+6+Princ%C3%ADpios+do+Preparo+radicular.pdf",
+                        id: 1,
+                    }
+                ],
+            },
         },
         {
             widgetName: "quizOptions",
@@ -75,7 +90,7 @@ const config = {
                     {
                         text: "Abrir o quiz",
                         url:
-                            "https://www.google.com.br",
+                            "https://kahoot.it/",
                         id: 1,
                     },
                 ],
@@ -99,9 +114,8 @@ const config = {
             props: {
                 options: [
                     {
-                        text: "LINK VIDEOSAULA ENDOSCIENCE",
-                        url:
-                            "https://www.google.com.br",
+                        text: "EndoScience - Princípios de preparo do Canal Radicular",
+                        url: "https://www.youtube.com/watch?v=PAMNIaAf6Ms",
                         id: 1,
                     },
                 ],
@@ -111,7 +125,6 @@ const config = {
         {
             widgetName: "booksLinks",
             widgetFunc: (props) => <div>
-                <LinkList {...props} />
                 <BibliographicTipsFinalizationOptions {...props} />
                 <BackToOptionsButton {...props} />
             </div>,
@@ -137,9 +150,9 @@ const config = {
             props: {
                 options: [
                     {
-                        text: "LINKS ARTIGOS",
+                        text: "Artigo 'Como o ultrassom potencializa a ação hipoclorito de sódio?'",
                         url:
-                            "https://www.google.com.br",
+                            "https://endoscience.com.br/videos/como-o-ultrassom-potencializa-a-acao-hipoclorito-de-sodio/",
                         id: 1,
                     },
                 ],

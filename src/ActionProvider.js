@@ -28,7 +28,6 @@ class ActionProvider {
 
 
     handlePrinciples = () => {
-        this.sendBotMessage("Esses princípios são ....", {})
         this.sendBotMessage("Que saber mais? Confira esses resumos que preparamos para você!", { widget: 'summariesPDF' })
     };
 
@@ -38,7 +37,7 @@ class ActionProvider {
     };
 
     handleQuizRequest = () => {
-        this.sendBotMessage("Agora, que tal testar os seus conhecimentos sobre os princípios do preparo radicular?",
+        this.sendBotMessage("Que tal testar os seus conhecimentos sobre os princípios do preparo radicular?",
             { widget: "quizOptions" }
         )
     };
@@ -52,7 +51,13 @@ class ActionProvider {
     }
 
     handleBooksTips = () => {
-        this.sendBotMessage("Segue algumas dicas de livros referências sobre o assunto:", { widget: 'booksLinks' })
+        this.sendBotMessage("Segue algumas dicas de livros referências sobre o assunto:", {})
+
+        this.sendBotMessage("LOPES, H.P.; SIQUEIRA JÚNIOR, J.F. Endodontia: biologia e técnica. 3. ed., Rio de Janeiro: Guanabara Koogan, 2015.", {})
+        this.sendBotMessage("TORABINEJAD, M. & WALTON R. E. Endodontia Princípios e Prática. Trad. 4ª. Ed. Elsevier Editora ltda. Rio de Janeiro, 2010. 474p.",  {})
+        this.sendBotMessage("LEONARDO, MÁRIO ROBERTO. Endodontia: Tratamento de Canais Radiculares  Princípios Técnicos e Biológicos .Volume 1. Ed. Artes médicas. São Paulo, 2008.", {})
+        this.sendBotMessage("ESTRELA, Carlos. Endodontia laboratorial e clínica. São Paulo: Artes Médicas, 2013.", {})
+        this.sendBotMessage("BIBLIOGRAFIA: 1. ESTRELA, C. Ciência Endodôntica. São Paulo: Artes Médicas, 2004.", { widget: 'booksLinks' })
     }
 
     handleArticlesTips = () => {
@@ -61,6 +66,14 @@ class ActionProvider {
 
     handleThanks = () => {
         this.sendBotMessage("Espero que tenha te ajudado, obrigada!", {})
+    }
+
+    handleYes = () => {
+        this.sendBotMessage("Aqui está o link do quiz:", { widget: "quizOptions" })
+    }
+
+    handleNo = () => {
+        this.sendBotMessage("Aqui estão algumas sugestões para que você se aprofunde no assunto:", { widget: "learningOptions" })
     }
 
     

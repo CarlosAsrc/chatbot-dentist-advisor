@@ -13,17 +13,21 @@ class ActionProvider {
 
     greet() {
         this.sendBotMessage("Olá! 😃", {})
-        this.handleBackToOptions(2000)
+        this.handleBackToOptions()
     }
 
     cannotUnderstandMessage() {
         this.sendBotMessage("Não entendi 😕", {})
-        this.handleBackToOptions(2000)
+        this.handleBackToOptions()
     }
 
     yourNameQuestion() {
         this.sendBotMessage("O meu nome é Estrela! 🥰", {})
-        this.handleBackToOptions(2000)
+        this.handleBackToOptions()
+    }
+
+    bye() {
+        this.sendBotMessage("Até logo! 😃", {})
     }
 
 
@@ -63,9 +67,13 @@ class ActionProvider {
     handleArticlesTips = () => {
         this.sendBotMessage("Segue algumas dicas de artigos para se manter atualizado:", { widget: 'articlesLinks' })
     }
+    
+    handleSitesTips = () => {
+        this.sendBotMessage("Olha so este excelente site de ensino e pesquisa em Ciência Edondôntica:", { widget: 'sitesLinks' })
+    }
 
     handleThanks = () => {
-        this.sendBotMessage("Espero que tenha te ajudado, obrigada!", {})
+        this.sendBotMessage("Espero que tenha ajudado, obrigada, e até logo! 😃", {})
     }
 
     handleYes = () => {
@@ -80,7 +88,7 @@ class ActionProvider {
 
 
 
-    handleBackToOptions = (delay) => {
+    handleBackToOptions = () => {
         this.sendBotMessage(
             "Escolha uma das opções para que eu possa continuar lhe ajudando:",
             { widget: "learningOptions" }

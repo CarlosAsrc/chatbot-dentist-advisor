@@ -16,6 +16,21 @@ class MessageParser {
       return
     }
 
+    if (
+      lowerCaseMessage.includes("tchau")
+    ) {
+      this.actionProvider.bye()
+      return
+    }
+
+    if (
+      lowerCaseMessage.includes("obrigad")
+    ) {
+      this.actionProvider.handleThanks()
+      return
+    }
+    
+
     if (lowerCaseMessage.includes("seu nome")) {
       this.actionProvider.yourNameQuestion()
       return
@@ -28,6 +43,11 @@ class MessageParser {
 
     if (lowerCaseMessage.includes("quiz")) {
       this.actionProvider.handleQuizRequest()
+      return
+    }
+
+    if (lowerCaseMessage.includes("site")) {
+      this.actionProvider.handleSitesTips()
       return
     }
 

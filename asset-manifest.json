@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/chatbot-dentist-advisor/static/css/main.eb0825d4.chunk.css",
-    "main.js": "/chatbot-dentist-advisor/static/js/main.b8479bed.chunk.js",
-    "main.js.map": "/chatbot-dentist-advisor/static/js/main.b8479bed.chunk.js.map",
+    "main.js": "/chatbot-dentist-advisor/static/js/main.42d3ad4b.chunk.js",
+    "main.js.map": "/chatbot-dentist-advisor/static/js/main.42d3ad4b.chunk.js.map",
     "runtime-main.js": "/chatbot-dentist-advisor/static/js/runtime-main.da91590d.js",
     "runtime-main.js.map": "/chatbot-dentist-advisor/static/js/runtime-main.da91590d.js.map",
-    "static/js/2.65450c7d.chunk.js": "/chatbot-dentist-advisor/static/js/2.65450c7d.chunk.js",
-    "static/js/2.65450c7d.chunk.js.map": "/chatbot-dentist-advisor/static/js/2.65450c7d.chunk.js.map",
+    "static/js/2.aa3e9723.chunk.js": "/chatbot-dentist-advisor/static/js/2.aa3e9723.chunk.js",
+    "static/js/2.aa3e9723.chunk.js.map": "/chatbot-dentist-advisor/static/js/2.aa3e9723.chunk.js.map",
     "static/js/3.baae8487.chunk.js": "/chatbot-dentist-advisor/static/js/3.baae8487.chunk.js",
     "static/js/3.baae8487.chunk.js.map": "/chatbot-dentist-advisor/static/js/3.baae8487.chunk.js.map",
     "index.html": "/chatbot-dentist-advisor/index.html",
     "static/css/main.eb0825d4.chunk.css.map": "/chatbot-dentist-advisor/static/css/main.eb0825d4.chunk.css.map",
-    "static/js/2.65450c7d.chunk.js.LICENSE.txt": "/chatbot-dentist-advisor/static/js/2.65450c7d.chunk.js.LICENSE.txt",
+    "static/js/2.aa3e9723.chunk.js.LICENSE.txt": "/chatbot-dentist-advisor/static/js/2.aa3e9723.chunk.js.LICENSE.txt",
     "static/media/bot-avatar.f6e79fa2.svg": "/chatbot-dentist-advisor/static/media/bot-avatar.f6e79fa2.svg",
     "static/media/link.c3257aab.svg": "/chatbot-dentist-advisor/static/media/link.c3257aab.svg",
     "static/media/pling-sound.af210ab9.mp3": "/chatbot-dentist-advisor/static/media/pling-sound.af210ab9.mp3",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.da91590d.js",
-    "static/js/2.65450c7d.chunk.js",
+    "static/js/2.aa3e9723.chunk.js",
     "static/css/main.eb0825d4.chunk.css",
-    "static/js/main.b8479bed.chunk.js"
+    "static/js/main.42d3ad4b.chunk.js"
   ]
 }

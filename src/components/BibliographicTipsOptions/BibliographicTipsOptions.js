@@ -6,7 +6,7 @@ const BibliographicTipsOptions = (props) => {
     const options = [
         { text: "Quero assistir videoaulas sobre o assunto.", handler: props.actionProvider.handleVideoLessonsTips, id: 1 },
         { text: "Quero dicas de livros referências sobre o assunto", handler: props.actionProvider.handleBooksTips, id: 2 },
-        { text: "Quero artigos para se manter atualizado", handler: props.actionProvider.handleArticlesTips, id: 3 },
+        { text: "Quero artigos e dicas de leitura", handler: props.actionProvider.handleArticlesTips, id: 3 },
         { text: "Quero sites com conteúdos sobre o assunto", handler: props.actionProvider.handleSitesTips, id: 4 }
     ];
 

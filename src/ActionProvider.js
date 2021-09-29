@@ -65,7 +65,7 @@ class ActionProvider {
     }
 
     handleArticlesTips = () => {
-        this.sendBotMessage("Segue algumas dicas de artigos para se manter atualizado:", { widget: 'articlesLinks' })
+        this.sendBotMessage("Segue algumas dicas de artigos e dicas de leitura para se manter atualizado:", { widget: 'articlesLinks' })
     }
     
     handleSitesTips = () => {

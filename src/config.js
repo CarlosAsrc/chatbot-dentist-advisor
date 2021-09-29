@@ -173,7 +173,7 @@ const config = {
                         id: 1,
                     },
                     {
-                        text: "Artigos e dicas de leitura",
+                        text: "Preparo Biomeânico dos Canais Radiculares",
                         url:
                             "http://www.forp.usp.br/restauradora/temas_endo/solu/solu.htm",
                         id: 2,

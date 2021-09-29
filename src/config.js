@@ -15,6 +15,7 @@ const config = {
     initialMessages: [createChatBotMessage(`Olá, aqui é a Estrela, assistente virtual especialista em Princípios do Preparo Radicular, que serve para que o profissional possa  planejar cuidadosamente o caso e ser executado de forma correta, evitando que seja surpreendido durante a execução do preparo do canal. Deseja fazer o Quiz?`, {
         widget: "quizQuestionOptions",
     }),
+
     ],
     customStyles: {
         botMessageBox: {

@@ -172,6 +172,12 @@ const config = {
                             "https://endoscience.com.br/videos/como-o-ultrassom-potencializa-a-acao-hipoclorito-de-sodio/",
                         id: 1,
                     },
+                    {
+                        text: "Artigos e dicas de leitura",
+                        url:
+                            "http://www.forp.usp.br/restauradora/temas_endo/solu/solu.htm",
+                        id: 2,
+                    },
                 ],
             },
         },

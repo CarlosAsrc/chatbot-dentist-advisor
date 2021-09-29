@@ -73,7 +73,7 @@ class ActionProvider {
     }
 
     handleThanks = () => {
-        this.sendBotMessage("Espero que tenha ajudado, obrigada, e até logo! 😃", {})
+        this.sendBotMessage("Espero que tenha ajudado! Obrigada! 😃", {})
     }
 
     handleYes = () => {

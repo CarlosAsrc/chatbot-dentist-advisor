@@ -13,7 +13,7 @@ import QuizQuestionOptions from "./components/QuizQuestionOptions/QuizQuestionOp
 const config = {
     botName: "Assistente virtual Estrela",
     initialMessages: [
-        createChatBotMessage(`Olá, aqui é a Estrela, assistente virtual especialista em Princípios do Preparo Radicular, que serve para que o profissional possa  planejar cuidadosamente o caso e ser executado de forma correta, evitando que seja surpreendido durante a execução do preparo do canal.`, {}),
+        createChatBotMessage(`Olá, aqui é a Estrela, assistente virtual especialista em Princípios do Preparo Radicular, vou ajuda-lo(a) a planejar cuidadosamente seus tratamentos endodônticos, evitando que você seja surpreendido durante a execução do preparo do canal.`, {}),
         createChatBotMessage(`Deseja fazer o Quiz?`, {widget: "quizQuestionOptions"})
     ],
     customStyles: {

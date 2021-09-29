@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chatbot-dentist-advisor/static/css/main.2cbdf0f7.chunk.css",
-    "main.js": "/chatbot-dentist-advisor/static/js/main.c8774f96.chunk.js",
-    "main.js.map": "/chatbot-dentist-advisor/static/js/main.c8774f96.chunk.js.map",
+    "main.js": "/chatbot-dentist-advisor/static/js/main.0c75203d.chunk.js",
+    "main.js.map": "/chatbot-dentist-advisor/static/js/main.0c75203d.chunk.js.map",
     "runtime-main.js": "/chatbot-dentist-advisor/static/js/runtime-main.da91590d.js",
     "runtime-main.js.map": "/chatbot-dentist-advisor/static/js/runtime-main.da91590d.js.map",
     "static/js/2.aa3e9723.chunk.js": "/chatbot-dentist-advisor/static/js/2.aa3e9723.chunk.js",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.da91590d.js",
     "static/js/2.aa3e9723.chunk.js",
     "static/css/main.2cbdf0f7.chunk.css",
-    "static/js/main.c8774f96.chunk.js"
+    "static/js/main.0c75203d.chunk.js"
   ]
 }
